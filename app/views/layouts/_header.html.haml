@@ -1,0 +1,59 @@
+.hed
+  = image_tag("logo.png")
+  .menu.hidden-sm.hidden-xs
+    = link_to '#' do
+      %span.glyphicon.glyphicon-search
+      .menu_link Discover
+    = link_to '#' do
+      %span.glyphicon.glyphicon-random
+      .menu_link Collaborate
+    = link_to '#' do
+      %span.glyphicon.glyphicon-briefcase
+      .menu_link Trancast
+  %form.navbar-form.navbar-left.my_input.hidden-sm.hidden-xs{:role => "search"}
+    .form-group
+      %input.form-control.input{:type => "text", :placeholder => "Search"}
+  .my_menu.hidden-sm.hidden-xs
+    .link.m_alert
+      = link_to '#' do
+        %span.glyphicon.glyphicon-comment
+        .com_link.red
+          6 Alerts
+    .link.messages
+      = link_to '#' do
+        %span.glyphicon.glyphicon-envelope
+        .com_link.red
+          5 Messages
+    .link.updates
+      = link_to '#' do
+        %span.glyphicon.glyphicon-refresh
+        .com_link.blue
+          3 Updates
+  .btn-group.my_btn.hidden-sm.hidden-xs
+    %button.btn.btn-default.my_height{:type => "button"} Tracey Geronimo
+    %button.btn.btn-default.dropdown-toggle.my_height{"data-toggle" => "dropdown", :type => "button"}
+      %span.caret
+      %span.sr-only Toggle Dropdown
+    %ul.dropdown-menu{:role => "menu"}
+      %li
+        %a{:href => "#"} Tracey Geronimo
+      %li
+        %a{:href => "#"} Another action
+      %li
+        %a{:href => "#"} Something else here
+      %li.divider
+      %li
+        %a{:href => "#"} Separated link
+  #navig_slim.visible-sm.visible-xs
+    %button.nav-button Toggle Navigation
+    %ul.primary-nav
+      %li
+        %a{:href => "#"} About US
+      %li
+        %a{:href => "#"} Emploers
+      %li
+        %a{:href => "#"} Job Seekers
+      %li
+        %a{:href => "#"} Sing UP
+      %li
+        %a{:href => "#"} Login
