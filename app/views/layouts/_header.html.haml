@@ -48,12 +48,44 @@
     %button.nav-button Toggle Navigation
     %ul.primary-nav
       %li
-        %a{:href => "#"} About US
+        %form.navbar-form.navbar-left.my_input{:role => "search"}
+          .form-group
+            %input.form-control.input{:type => "text", :placeholder => "Search"}
+      %li.divid  
       %li
-        %a{:href => "#"} Emploers
+        = link_to '#' do
+          %span.glyphicon.glyphicon-search
+          Discover
       %li
-        %a{:href => "#"} Job Seekers
+        = link_to '#' do
+          %span.glyphicon.glyphicon-random
+          Collaborate
       %li
-        %a{:href => "#"} Sing UP
+        = link_to '#' do
+          %span.glyphicon.glyphicon-briefcase
+          Trancast
+      %li.divid
       %li
-        %a{:href => "#"} Login
+        = link_to '#' do
+          %span.glyphicon.glyphicon-comment
+          6 Alerts
+      %li
+        = link_to '#' do
+          %span.glyphicon.glyphicon-envelope
+          5 Messages
+      %li
+        = link_to '#' do
+          %span.glyphicon.glyphicon-refresh
+          3 Updates
+      %li.divid
+      %li.parent
+        %a{:href => "#"} Tracey Geronimo
+        %ul
+          %li
+            %a{:href => "#"} Tracey Geronimo
+          %li
+            %a{:href => "#"} Another action
+          %li
+            %a{:href => "#"} Something else here
+          %li
+            %a{:href => "#"} Separated link

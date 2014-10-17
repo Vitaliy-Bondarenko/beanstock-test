@@ -8,12 +8,6 @@
     float: left;
   }
 
-  span {
-    float: left;
-    margin-right: 5px;
-    font-size: 12px;
-    top: 3px;
-  }
 
   .menu_link {
     float: left;
@@ -35,6 +29,13 @@
   padding: 16px 17px;
   margin-left: 11px;
   float: left;
+  
+  span {
+    float: left;
+    margin-right: 5px;
+    font-size: 12px;
+    top: 3px;
+  }
   
   a {
     float: left;
@@ -77,6 +78,7 @@
   span {
     margin-right: 2px;
     top: 2px;
+    float: left;
   }
 
   .com_link {
@@ -102,16 +104,35 @@
 }
 
 #navig_slim {
-  float: left;
-  padding: 15px 0px;
+  float: right;
+  padding: 5px 20px;
+
+  span {
+      float: left;
+      margin-right: 18px;
+      top: 7px;
+  }
+
+  .divid {
+    height: 2px;
+    margin: 0px auto;
+    overflow: hidden;
+    background-color: #435FB9;
+    width: 90%;
+  }
+
+  .my_input { margin: 7px 5px 0 27px; }
+
+  .input {
+    height: 50px;
+    width: 100%;
+    font-size: 25px;
+  }
 }
 
 @media only screen {
   .nav-button {
     display: block;
-    position: absolute;
-    top: 35px;
-    left: 3px;
     width: 40px;
     height: 40px;
     background: url('menu-icon-large.png'), -webkit-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,.2));
@@ -138,6 +159,7 @@
       background: url('close-icon-large.png'),    -moz-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,.2));
       background: url('close-icon-large.png'),     -ms-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,.2));
       background: url('close-icon-large.png'),      -o-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,.2));
+      position: absolute;
       background-position: center center;
       background-repeat: no-repeat;
     }
@@ -145,7 +167,7 @@
 
   .primary-nav {
     float: none;
-    background-color: #0F6274; 
+    background-color: #67B9CA; 
     background-image: -webkit-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,.2));
     background-image:    -moz-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,.2));
     background-image:     -ms-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,.2));
@@ -170,8 +192,8 @@
       a {
         display: block;
         width: 100%;
-        padding: 38px 9%;
-        font-size: 41px;
+        padding: 9px 9%;
+        font-size: 28px;
         font-weight: bold;
         text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.15);
         color: white;
@@ -194,7 +216,7 @@
   .primary-nav.open {
     width: 100%;
     height: auto;
-    padding-top: 100px;
+    padding-top: 50px;
   }
 
   .primary-nav.open li { 
@@ -225,8 +247,8 @@
 
   .primary-nav li ul a {
     border: 0 none;
-    font-size: 12px;
-    padding: 10px 5%;
+    font-size: 21px;
+    padding: 10px 10%;
     font-weight: normal;
   }
 
