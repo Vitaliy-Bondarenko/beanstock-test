@@ -18,6 +18,6 @@
 
 $(document).ready(function(){
   $(".nav-button").click(function () {
-    $(".nav-button,.primary-nav").toggleClass("open");
+    $(".navig-slim,.nav-button,.primary-nav").toggleClass("open");
   });    
 });

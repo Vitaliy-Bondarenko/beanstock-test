@@ -1,91 +1,94 @@
-.hed
-  = image_tag("logo.png")
-  .menu.hidden-sm.hidden-xs
-    = link_to '#' do
-      %span.glyphicon.glyphicon-search
-      .menu_link Discover
-    = link_to '#' do
-      %span.glyphicon.glyphicon-random
-      .menu_link Collaborate
-    = link_to '#' do
-      %span.glyphicon.glyphicon-briefcase
-      .menu_link Trancast
-  %form.navbar-form.navbar-left.my_input.hidden-sm.hidden-xs{:role => "search"}
-    .form-group
-      %input.form-control.input{:type => "text", :placeholder => "Search"}
-  .my_menu.hidden-sm.hidden-xs
-    .link.m_alert
-      = link_to '#' do
-        %span.glyphicon.glyphicon-comment
-        .com_link.red
-          6 Alerts
-    .link.messages
-      = link_to '#' do
-        %span.glyphicon.glyphicon-envelope
-        .com_link.red
-          5 Messages
-    .link.updates
-      = link_to '#' do
-        %span.glyphicon.glyphicon-refresh
-        .com_link.blue
-          3 Updates
-  .btn-group.my_btn.hidden-sm.hidden-xs
-    %button.btn.btn-default.my_height{:type => "button"} Tracey Geronimo
-    %button.btn.btn-default.dropdown-toggle.my_height{"data-toggle" => "dropdown", :type => "button"}
-      %span.caret
-      %span.sr-only Toggle Dropdown
-    %ul.dropdown-menu{:role => "menu"}
-      %li
-        %a{:href => "#"} Tracey Geronimo
-      %li
-        %a{:href => "#"} Another action
-      %li
-        %a{:href => "#"} Something else here
-      %li.divider
-      %li
-        %a{:href => "#"} Separated link
-  #navig_slim.visible-sm.visible-xs
-    %button.nav-button Toggle Navigation
-    %ul.primary-nav
-      %li
-        %form.navbar-form.navbar-left.my_input{:role => "search"}
-          .form-group
-            %input.form-control.input{:type => "text", :placeholder => "Search"}
-      %li.divid  
-      %li
+.hed_m
+  .hed
+    .hed_left
+      = image_tag("logo.png")
+      .menu.hidden-sm.hidden-xs
         = link_to '#' do
           %span.glyphicon.glyphicon-search
-          Discover
-      %li
+          .menu_link Discover
         = link_to '#' do
           %span.glyphicon.glyphicon-random
-          Collaborate
-      %li
+          .menu_link Collaborate
         = link_to '#' do
           %span.glyphicon.glyphicon-briefcase
-          Trancast
-      %li.divid
-      %li
-        = link_to '#' do
-          %span.glyphicon.glyphicon-comment
-          6 Alerts
-      %li
-        = link_to '#' do
-          %span.glyphicon.glyphicon-envelope
-          5 Messages
-      %li
-        = link_to '#' do
-          %span.glyphicon.glyphicon-refresh
-          3 Updates
-      %li.divid
-      %li.parent
-        %a{:href => "#"} Tracey Geronimo
-        %ul
+          .menu_link Trancast
+    .hed_right.hidden-sm.hidden-xs
+      %form.navbar-form.navbar-left.my_input{:role => "search"}
+        .form-group
+          %input.form-control.input.input_s{:type => "text", :placeholder => "Search"}
+      .my_menu
+        .link.m_alert
+          = link_to '#' do
+            %span.glyphicon.glyphicon-comment
+            .com_link.red
+              6 Alerts
+        .link.messages
+          = link_to '#' do
+            %span.glyphicon.glyphicon-envelope
+            .com_link.red
+              5 Messages
+        .link.updates
+          = link_to '#' do
+            %span.glyphicon.glyphicon-refresh
+            .com_link.blue
+              3 Updates
+      .btn-group.my_btn.hidden-md.hidden-xs
+        %button.btn.btn-default.my_height{:type => "button"} Tracey Geronimo
+        %button.btn.btn-default.dropdown-toggle.my_height{"data-toggle" => "dropdown", :type => "button"}
+          %span.caret
+          %span.sr-only Toggle Dropdown
+        %ul.dropdown-menu{:role => "menu"}
           %li
             %a{:href => "#"} Tracey Geronimo
           %li
             %a{:href => "#"} Another action
           %li
             %a{:href => "#"} Something else here
+          %li.divider
           %li
             %a{:href => "#"} Separated link
+    .navig-slim
+      %button.nav-button Toggle Navigation
+      %ul.primary-nav
+        %li
+          %form.navbar-form.navbar-left.my_input{:role => "search"}
+            .form-group
+              %input.form-control.input{:type => "text", :placeholder => "Search"}
+        %li.divid  
+        %li
+          = link_to '#' do
+            %span.glyphicon.glyphicon-search
+            Discover
+        %li
+          = link_to '#' do
+            %span.glyphicon.glyphicon-random
+            Collaborate
+        %li
+          = link_to '#' do
+            %span.glyphicon.glyphicon-briefcase
+            Trancast
+        %li.divid
+        %li
+          = link_to '#' do
+            %span.glyphicon.glyphicon-comment
+            6 Alerts
+        %li
+          = link_to '#' do
+            %span.glyphicon.glyphicon-envelope
+            5 Messages
+        %li
+          = link_to '#' do
+            %span.glyphicon.glyphicon-refresh
+            3 Updates
+        %li.divid
+        %li.parent
+          %a{:href => "#"} Tracey Geronimo
+          %ul
+            %li
+              %a{:href => "#"} Tracey Geronimo
+            %li
+              %a{:href => "#"} Another action
+            %li
+              %a{:href => "#"} Something else here
+            %li
+              %a{:href => "#"} Separated link
