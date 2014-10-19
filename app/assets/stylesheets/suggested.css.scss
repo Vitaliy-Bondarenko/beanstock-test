@@ -1,3 +1,200 @@
 // Place all the styles related to the suggested controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.glavn {
+  width: 1406px;
+  margin: 22px auto;
+}
+
+.my-btn {
+  width: 100%;
+  background-color: #ECECEC;
+  color: #969696;
+  border-color: #CDCDCD;
+  text-align: left;
+  padding: 6px 6px 7px 12px;
+  font-size: 12px;
+
+  .caret {
+    float: right;
+    top: 9px;
+    position: relative;
+  }
+}
+
+.area {
+  background-color: white;
+  border-radius: 5px;
+  float: left;
+
+  &.z-left {
+    width: 16.715%;
+    margin-left: 10px;
+  }
+
+  &.z-center {
+    width: 56.5%;
+    margin-right: 14px; 
+    margin-left: 10px;
+    height: 500px;
+  }
+
+  &.z-right {
+    width: 24.36%;
+    height: 500px;
+  }
+}
+
+.nam { float: left}
+
+.hed-name {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  width: 100%;
+  height: 33px;
+  background-color: #222222;
+  color: white;
+
+  .btn-group { width: 100%; }
+
+  .btn {
+    &.my-btn {
+      width: 100%;
+      background-color: transparent;
+      border: none;
+      color: white;
+      text-align: left;
+      padding-left: 15px;
+      padding-right: 4px;
+      font-size: 15px;
+    }
+  }
+
+  span {
+    float: left;
+    top: 5px;
+    font-size: 11px;
+    margin-right: 11px;
+  }
+
+  .caret {
+    float: right;
+    top: 10px;
+    position: relative;
+  }
+}
+
+.area_sort {
+  width: 100%;
+  height: 70px;
+  background-color: #F3F3F3;
+  padding: 8px 10px;
+  font-size: 12px;
+  color: #969696;
+
+  .btn-group { width: 100%; }
+
+  .my-btn { margin-top: 3px; }
+}
+
+.small {
+  width: 100%;
+  height: 472px;
+  overflow-y: overlay;
+  overflow-x: hidden;
+}
+
+.small-mail {
+  width: 100%;
+  height: 59px;
+  background-color: #FFFFFF;
+  padding: 4px 4px 4px 10px;
+  border-bottom: 1px solid #F3F3F3;
+  border-top: 1px solid #F3F3F3;
+
+  &.plus_logo {
+    .small-message {
+      width: 65%;
+    }
+
+    .user-name { float: none; }
+
+    .img_logo {
+      width: 22%;
+      height: 100%;
+      float: left;
+    }
+
+    img {
+      width: 38px;
+      height: 38px;
+      border: 1px solid #D1D1D1;
+      padding: 2px;
+      margin: 2px;
+    } 
+  }
+
+  &.bord-rad {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+
+  &:hover {
+    background-color: #F3F3F3;
+
+    .close_del {
+      color: #D3D3D3;
+    }
+  }
+
+  .img_c {
+    width: 10%;
+    height: 100%;
+    float: left;
+    padding-top: 1px;
+    font-size: 12px;
+  }
+
+  .user-name {
+    font-size: 13px;
+    float: left;
+    color: #B94A48;
+    margin-right: 2px;
+    height: 17px; 
+  }
+
+  .small-message {
+    width: 87%;
+    height: 100%;
+    float: left;
+    padding-left: 2px;
+
+    .user-mess {
+      font-size: 12px;
+      line-height: 149%;
+      display: block;
+      color: #989898;
+    }
+
+    .user-ago { 
+      font-size: 11px;
+      color: #BCBCBC;
+    }
+  }
+
+  .close_del {
+    width: 3%;
+    height: 100%;
+    color: white;
+    float: right;
+    font-size: 12px;
+
+    .btn-my {
+      background-color: transparent;
+      border: none;
+      padding: 0;
+      font-size: 12px;      
+    }
+  }
+}
