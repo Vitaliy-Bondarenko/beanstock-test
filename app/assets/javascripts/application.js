@@ -21,3 +21,16 @@ $(document).ready(function(){
     $(".navig-slim,.nav-button,.primary-nav").toggleClass("open");
   });    
 });
+
+ $(document).ready(function()
+{
+  $('.mutual').popover(
+  {
+     trigger: 'hover',
+     html: true,
+     placement: 'bottom',
+     content: 'add dobavlu'
+  });
+});
+
+ $('body').scrollspy({ target: '.small' })

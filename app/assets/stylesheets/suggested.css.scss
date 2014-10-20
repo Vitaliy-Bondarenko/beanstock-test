@@ -37,7 +37,6 @@
     width: 56.5%;
     margin-right: 14px; 
     margin-left: 10px;
-    height: 500px;
     background-color: #EEEEEE;
   }
 
@@ -203,6 +202,7 @@
   width: 99.5%;
   display: table;
 
+
   li {
     color: #555555;
     border-bottom-color: transparent;
@@ -223,6 +223,7 @@
       height: 39px;
       font-size: 13px;
       padding: 10px;
+      text-align: center;
 
       &:hover { background-color: #DFDBDB; }
     }
@@ -234,8 +235,8 @@
   width: 100%;
   background-color: #F9F9F9;
   border-top-right-radius: 5px;
-  border-left: 1px solid #dddddd;
-  border-right: 1px solid #dddddd;
+  border-left: 1px solid #C1C1C1;
+  border-right: 1px solid #C1C1C1;
 }
 
 .hed_mid-l {
@@ -277,4 +278,129 @@
 
   .btn-group { width: 89%; }
   .my-btn { margin-top: 3px; }
+}
+
+.border-lr {
+  border: 1px solid #C1C1C1;
+  border-top: none;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+
+  &.small { height: 640px; }
+  .small-mail { height: 71px; }
+}
+
+.avat_user {
+  height: 100%;
+  width: 82px;
+  float: left;
+  
+  img {
+    width: 45px;
+    height: 45px;
+    border: 1px solid #D1D1D1;
+    padding: 2px;
+    margin: 10px 9px;
+  }
+}
+
+.mass_user {
+  height: 100%;
+  float: left;
+  padding-top: 6px;
+
+  .name_user {
+    display: table;
+
+    .user-nam {
+      color: black;
+      font-size: 13px;
+      float: left;
+      font-weight: 800;
+    }
+
+    .label_user {
+      font-size: 12px;
+      background-color: #E7E7E7;
+      border-radius: 2px;
+      margin: 2px 0 0px 21px;
+      float: left;
+      padding: 0px 4px;
+
+      &.lbl-red { color: #C77877;}
+      &.lbl-green { color: #42B061;}
+      &.lbl-blue { color: #5093B4;}
+    }
+  }
+
+  .user-status {
+    width: 100%;
+    font-size: 11px;
+    padding-top: 3px;
+
+    &.on-line { color: #7BC591; }
+    &.a-way { color: #77ABC6; }
+    &.b-usy { color: #B94A48; }
+    &.off-line { color: #A5A5A5; }
+  }
+
+  .user-conn {
+    width: 100%;
+    margin-top: 4px;
+    font-size: 11.5px;
+    color: #A3A3A3;
+
+    .glyphicon {
+      font-size: 9px;
+      color: #A3A3A3;
+      margin-right: 2px;
+    } 
+
+    .mutual {
+      color: #A3A3A3;
+      text-decoration: underline;
+    }
+  }
+}
+
+.butt_user {
+  float: right;
+  height: 100%;
+  width: 208px;
+  padding-top: 20px;
+
+  .my-btn-grop { float: left; }
+
+  .btn {
+    font-size: 12px;
+    box-shadow: 0 2px 4px #DBDAD9;
+    padding: 4px 11px;
+
+    &.btn-gray {
+      background-image: -webkit-linear-gradient(bottom, #C5BEBD 0%, #EEEEEE 100%);
+      background-image: -o-linear-gradient(bottom, #C5BEBD 0%, #EEEEEE 100%);
+      background-image: -moz-linear-gradient(bottom, #C5BEBD 0%, #EEEEEE 100%);
+      background-image: -ms-linear-gradient(bottom, #C5BEBD 0%, #EEEEEE 100%);
+      background-image: linear-gradient(to bottom, #C5BEBD 0%, #EEEEEE 100%);
+      background-color: #D8D4D4;
+      color: #5F5F5F;
+      border: 1px solid #888888;
+
+      &:hover { background-image: none; }
+    } 
+    
+    &.btn-black {
+      background-image: -o-linear-gradient(bottom, #828282 0%, #4E4E4E 100%);
+      background-image: -moz-linear-gradient(bottom, #828282 0%, #4E4E4E 100%);
+      background-image: -webkit-linear-gradient(bottom, #828282 0%, #4E4E4E 100%);
+      background-image: -ms-linear-gradient(bottom, #828282 0%, #4E4E4E 100%);
+      background-image: linear-gradient(to bottom, #828282 0%, #4E4E4E 100%);
+      background-color: #5F5F5F;
+      color: #F4F4F4;
+      border: 1px solid #2F2F2F;
+      margin-left: 8px;
+
+      &:hover { background-image: none; }
+    } 
+  }
 }
