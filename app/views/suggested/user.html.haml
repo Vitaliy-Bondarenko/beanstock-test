@@ -116,4 +116,38 @@
             %button.btn.btn-my 
               .glyphicon.glyphicon-remove
   .area.z-center
+    .my_nav-tabs
+      %ul.nav.nav-tabs
+        %li
+          %a{:href => "#"} Messages
+        %li
+          %a{:href => "#"} Requests
+        %li
+          %a{:href => "#"} Notifications
+        %li.active
+          %a{:href => "#"} Suggested Users
+    .hed_mid
+      .hed_mid-l
+        .sorti
+          Sort by Profile Type:
+          .btn-group
+            %button.btn.btn-default.dropdown-toggle.my-btn{"data-toggle" => "dropdown", :type => "button"}
+              .nam All
+              %span.caret
+        .sorti
+          Sort by First Name:
+          .btn-group
+            %button.btn.btn-default.dropdown-toggle.my-btn{"data-toggle" => "dropdown", :type => "button"}
+              .nam All
+              %span.caret
+        .sorti
+          Sort by Last Name:
+          .btn-group
+            %button.btn.btn-default.dropdown-toggle.my-btn{"data-toggle" => "dropdown", :type => "button"}
+              .nam All
+              %span.caret
+      .hed_mid-r
+        %form.navbar-form.navbar-left.my_input{:role => "search"}
+          .form-group
+            %input.form-control.input.my_in{:type => "text", :placeholder => "type your search here"}
   .area.z-right

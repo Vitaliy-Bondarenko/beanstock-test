@@ -38,6 +38,7 @@
     margin-right: 14px; 
     margin-left: 10px;
     height: 500px;
+    background-color: #EEEEEE;
   }
 
   &.z-right {
@@ -143,9 +144,7 @@
   &:hover {
     background-color: #F3F3F3;
 
-    .close_del {
-      color: #D3D3D3;
-    }
+    .close_del { color: #D3D3D3; }
   }
 
   .img_c {
@@ -197,4 +196,85 @@
       font-size: 12px;      
     }
   }
+}
+
+.my_nav-tabs {
+  background-color: #EEEEEE;
+  width: 99.5%;
+  display: table;
+
+  li {
+    color: #555555;
+    border-bottom-color: transparent;
+    cursor: default;
+    width: 136px;
+  
+    &.active {
+      a{ background-color: #F9F9F9; }
+    }
+
+    a {
+      margin-right: 7px;
+      border: 1px solid transparent;
+      border-radius: 4px 4px 0 0;
+      background-color: #F4F4F4;
+      border: 1px solid #dddddd;
+      color: #494949;
+      height: 39px;
+      font-size: 13px;
+      padding: 10px;
+
+      &:hover { background-color: #DFDBDB; }
+    }
+  }
+}
+
+.hed_mid {
+  min-height: 80px;
+  width: 100%;
+  background-color: #F9F9F9;
+  border-top-right-radius: 5px;
+  border-left: 1px solid #dddddd;
+  border-right: 1px solid #dddddd;
+}
+
+.hed_mid-l {
+  float: left;
+  height: 100%;
+  width: 386px;
+  margin-left: 16px;
+}
+
+.hed_mid-r {
+  float: right;
+  height: 100%;
+  width: 250px;
+  border-top-right-radius: 5px;
+
+  .my_input { 
+    margin: 33px 5px 0 1px;
+    padding: 0;
+  }
+
+  .my_in {
+    background-image: url("search.png");
+    background-repeat: no-repeat;
+    background-position: 10px center;
+    padding-left: 44px;
+    background-color: #F7F7F7;
+    width: 221px;
+    font-size: 12px;
+  } 
+}
+
+.sorti {
+  width: 33.333333%;
+  height: 100%;
+  float: left;
+  padding: 13px 14px 0 0;
+  font-size: 12px;
+  color: #969696;
+
+  .btn-group { width: 89%; }
+  .my-btn { margin-top: 3px; }
 }
