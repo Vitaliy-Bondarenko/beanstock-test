@@ -22,7 +22,7 @@ $(document).ready(function(){
   });    
 });
 
- $(document).ready(function()
+  $(document).ready(function()
 {
   $('.mutual').popover(
   {
@@ -30,6 +30,17 @@ $(document).ready(function(){
      html: true,
      placement: 'bottom',
      content: 'add dobavlu'
+  });
+});
+
+  $(document).ready(function()
+{
+  $('.others').popover(
+  {
+     trigger: 'hover',
+     html: true,
+     placement: 'bottom',
+     content: 'GOOD'
   });
 });
 
