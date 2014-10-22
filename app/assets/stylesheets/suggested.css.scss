@@ -3,7 +3,7 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 .glavn {
-  width: 1406px;
+  max-width: 1406px;
   margin: 22px auto;
 }
 
@@ -28,22 +28,11 @@
   border-radius: 5px;
   float: left;
 
-  &.z-left {
-    width: 16.715%;
-    margin-left: 10px;
-  }
+  &.z-left { }
 
-  &.z-center {
-    width: 56.5%;
-    margin-right: 14px; 
-    margin-left: 10px;
-    background-color: #EEEEEE;
-  }
+  &.z-center { background-color: #EEEEEE; }
 
-  &.z-right {
-    width: 24.36%;
-    background-color: #EEEEEE;
-  }
+  &.z-right { background-color: #EEEEEE; }
 }
 
 .nam { float: left}
@@ -121,7 +110,7 @@
     .user-name { float: none; }
 
     .img_logo {
-      width: 22%;
+      width: 48.5px;
       height: 100%;
       float: left;
     }
@@ -233,6 +222,7 @@
 .hed_mid {
   min-height: 80px;
   width: 100%;
+  display: table;
   background-color: #F9F9F9;
   border-top-right-radius: 5px;
   border-left: 1px solid #C1C1C1;
@@ -433,6 +423,11 @@
     height: 100%;
   }
 
+  .cont-quarter {
+    float: left;
+    width: 25%;
+  }
+
   .btn_slayd {
     width: 67px;
     height: 67px;
@@ -474,7 +469,7 @@
     border-bottom-right-radius: 5px;
 
     .item {
-      img {
+      .img-my {
         width: 108px;
         margin: 9px 0 0 31px;
         border: 2px solid #C7C7C7;
@@ -663,7 +658,6 @@
     margin-top: -13px;
     font-size: 20px;
   }
-
 }
 
 .icon {
@@ -677,7 +671,196 @@
   background-position: 14px 14px;
   background-repeat: no-repeat;
 
-
   &.chevron-left { background-position: -432px -72px; }
   &.chevron-right { background-position: -456px -72px; }
+}
+
+@media (min-width: 1450px) {
+  .mobille-cen {
+    width: 56.5%;
+    max-width: 795px;
+    margin-right: 14px;
+    margin-left: 10px;
+  }
+}
+
+@media (max-width: 1450px) {
+  .mobille-cen {
+    width: 50.5%;
+    margin-right: 14px;
+    margin-left: 10px;
+  }
+}
+
+@media (min-width: 1301px) {
+  .mob-wi-l {
+    width: 235px;
+    margin-left: 10px;
+  }
+
+  .mob-wi-r { width: 342.5px; }
+}
+
+
+@media (min-width: 650px) and (max-width: 1300px) {
+  .mobille-cen {
+    width: 98%;
+    margin: 20px 1px;
+  }
+
+  .hed-mobille {
+    width: 213px;
+
+    .form-control { width: 185px; }
+  }
+
+  .mob-wi-l {
+    width: 97%;
+    margin-left: 1px;
+    margin-right: 1px;
+
+    .small{ height: auto; }
+
+    .small-mail {
+      width: 50%;
+      float: left;
+    }
+
+    .img_c { font-size: 25px; }
+    .user-name { float: none; }
+
+  }
+
+  .mob-wi-r {
+    margin-left: 1px;
+    margin-right: 1px;
+    width: 97%;
+
+    .mini-small{ height: auto; }
+
+    .small-mail {
+      width: 50%;
+      float: left;
+    }
+
+    .btn_slayd { margin: 6px 19%; }
+
+    .slayd_bottom {
+      .carousel-inner {
+        .item {
+          .img-my { width: 100px; }
+        }
+      }
+
+      .info_users {
+        float: none;
+        margin-left: 140px;
+        width: auto;
+      }
+    }
+  }
+}
+
+@media (max-width: 650px) {
+  .mobille-cen {
+    width: 98%;
+    margin: 20px 1px;
+
+    .butt_user {
+      padding-top: 0;
+      width: 90px;
+
+      .btn {
+        width: 75px;
+        font-size: 10px;
+        margin-bottom: 10px;
+
+        &.btn-black { margin: 0}
+      }
+    }
+
+    .small-mail {
+      margin-left: 0;
+
+      .avat_user { width: auto; }
+      img {margin: 10px 1px;}
+    }
+
+    .my_nav-tabs {
+      li { width: 25%; }
+
+      a {
+        font-size: 11px;
+        padding: 9px 0;
+      }
+    }
+
+    .hed_mid-l {
+      width: 100%;
+      margin-left: 0;
+    }
+
+    .hed_mid-r { width: 100%; }
+
+    .sorti {
+      padding: 5px 0;
+      font-size: 10px;
+    }
+
+    .my_input { margin: 5px 0px; }
+  }
+
+  .hed-mobille {
+    width: 213px;
+
+    .form-control {  width: 96%; }
+  }
+
+  .mob-wi-l {
+    width: 97%;
+    margin-left: 1px;
+    margin-right: 1px;
+
+    .img_c { font-size: 25px; }
+    .user-name { float: none; }
+  }
+
+  .mob-wi-r {
+    margin-left: 1px;
+    margin-right: 1px;
+    width: 97%;
+
+    .btn_slayd { margin: 6px 19%; }
+
+    .slayd_bottom {
+      .carousel-inner {
+        .item {
+          .img-my { width: 100px; }
+        }
+      }
+
+      .info_users {
+        float: none;
+        margin-left: 140px;
+        width: auto;
+      }
+    }
+  }
+}
+
+@media (max-width: 390px) {
+
+  .mobille-cen {
+    .butt_user {
+      width: 40px;
+
+      .btn { width: 29px; color: transparent; }
+    }
+  }
+
+  .mob-wi-r {
+    margin-left: 1px;
+    margin-right: 1px;
+    width: 97%;
+  }
 }

@@ -1,5 +1,5 @@
 .glavn
-  .area.z-left
+  .area.z-left.mob-wi-l
     .hed-name
       .btn-group
         %button.btn.btn-default.dropdown-toggle.my-btn{"data-toggle" => "dropdown", :type => "button"}
@@ -115,7 +115,7 @@
           .btn-group
             %button.btn.btn-my 
               .glyphicon.glyphicon-remove
-  .area.z-center
+  .area.z-center.mobille-cen
     .my_nav-tabs
       %ul.nav.nav-tabs
         %li
@@ -146,7 +146,7 @@
             %button.btn.btn-default.dropdown-toggle.my-btn{"data-toggle" => "dropdown", :type => "button"}
               .nam All
               %span.caret
-      .hed_mid-r
+      .hed_mid-r.hed-mobille
         %form.navbar-form.navbar-left.my_input{:role => "search"}
           .form-group
             %input.form-control.input.my_in{:type => "text", :placeholder => "type your search here"}
@@ -373,7 +373,7 @@
             %button.btn.btn-gray{:type => "button"} View Profile
           .btn-group  
             %button.btn.btn-black{:type => "button"} Send Request 
-  .area.z-right
+  .area.z-right.mob-wi-r
     .suges_users
       .slayd_top
         .name_slayd
@@ -382,32 +382,44 @@
         #carousel-example-generic.carousel.slide{"data-ride" => "carousel", "data-interval" => "false"}
           .carousel-inner
             .item.active
-              %button.btn_slayd
-                = image_tag("user_j.png")
-              %button.btn_slayd
-                = image_tag("user.png")
-              %button.btn_slayd
-                = image_tag("user_g.png")
-              %button.btn_slayd
-                = image_tag("user_b.png")
+              .cont-quarter
+                %button.btn_slayd
+                  = image_tag("user_j.png")
+              .cont-quarter
+                %button.btn_slayd
+                  = image_tag("user.png")
+              .cont-quarter
+                %button.btn_slayd
+                  = image_tag("user_g.png")
+              .cont-quarter
+                %button.btn_slayd
+                  = image_tag("user_b.png")
             .item
-              %button.btn_slayd
-                = image_tag("user.png")
-              %button.btn_slayd
-                = image_tag("user_c.png")
-              %button.btn_slayd
-                = image_tag("user_j.png")
-              %button.btn_slayd
-                = image_tag("user_g.png")
+              .cont-quarter
+                %button.btn_slayd
+                  = image_tag("user.png")
+              .cont-quarter
+                %button.btn_slayd
+                  = image_tag("user_c.png")
+              .cont-quarter
+                %button.btn_slayd
+                  = image_tag("user_j.png")
+              .cont-quarter
+                %button.btn_slayd
+                  = image_tag("user_g.png")
             .item
-              %button.btn_slayd
-                = image_tag("user_g.png")
-              %button.btn_slayd
-                = image_tag("user_j.png")
-              %button.btn_slayd
-                = image_tag("user.png")
-              %button.btn_slayd
-                = image_tag("user_b.png")
+              .cont-quarter
+                %button.btn_slayd
+                  = image_tag("user_g.png")
+              .cont-quarter
+                %button.btn_slayd
+                  = image_tag("user_j.png")
+              .cont-quarter
+                %button.btn_slayd
+                  = image_tag("user.png")
+              .cont-quarter
+                %button.btn_slayd
+                  = image_tag("user_b.png")
           %a.left.carousel-control{"data-slide" => "prev", :href => "#carousel-example-generic"}
             %span.glyphicon.glyphicon-chevron-left
           %a.right.carousel-control{"data-slide" => "next", :href => "#carousel-example-generic"}
@@ -416,7 +428,7 @@
         #carousel-example-gen.carousel.slide{"data-ride" => "carousel", "data-interval" => "false"}
           .carousel-inner
             .item.active
-              = image_tag("user_b.png")
+              = image_tag("user_b.png",:class => "img-my")
               .info_users
                 .name_user Sean Tracey Geronimo
                 .n_job Senior Project Manager
@@ -641,3 +653,20 @@
               %span.glyphicon.glyphicon-envelope
               .k-mail
                 %span 2
+        .small-mail
+          .avat_user
+            = image_tag("user.png")
+          .mass_user
+            .name_user
+              = link_to 'ADoe Jane', '#', {:class => "user-nam"}
+            .user-status
+              last seen 2h ago
+            .user-conn
+              .glyphicon.glyphicon-user
+              Added
+              %span.my_bold Sean Smith
+              and
+              = link_to '4 others', '#', {:class => "others"}
+          .ico-mail
+            = link_to '#' do
+              %span.glyphicon.glyphicon-envelope
