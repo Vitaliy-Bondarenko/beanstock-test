@@ -44,4 +44,15 @@ $(document).ready(function(){
   });
 });
 
+ $(document).ready(function()
+{
+  $('.btn_slayd').popover(
+  {
+     trigger: 'hover',
+     html: true,
+     placement: 'bottom',
+     content: 'v razrabotke'
+  });
+});
+
  $('body').scrollspy({ target: '.small' })

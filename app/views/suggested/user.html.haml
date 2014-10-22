@@ -375,11 +375,110 @@
             %button.btn.btn-black{:type => "button"} Send Request 
   .area.z-right
     .suges_users
+      .slayd_top
+        .name_slayd
+          .glyphicon.glyphicon-link
+          Sugested Users
+        #carousel-example-generic.carousel.slide{"data-ride" => "carousel", "data-interval" => "false"}
+          .carousel-inner
+            .item.active
+              %button.btn_slayd
+                = image_tag("user_j.png")
+              %button.btn_slayd
+                = image_tag("user.png")
+              %button.btn_slayd
+                = image_tag("user_g.png")
+              %button.btn_slayd
+                = image_tag("user_b.png")
+            .item
+              %button.btn_slayd
+                = image_tag("user.png")
+              %button.btn_slayd
+                = image_tag("user_c.png")
+              %button.btn_slayd
+                = image_tag("user_j.png")
+              %button.btn_slayd
+                = image_tag("user_g.png")
+            .item
+              %button.btn_slayd
+                = image_tag("user_g.png")
+              %button.btn_slayd
+                = image_tag("user_j.png")
+              %button.btn_slayd
+                = image_tag("user.png")
+              %button.btn_slayd
+                = image_tag("user_b.png")
+          %a.left.carousel-control{"data-slide" => "prev", :href => "#carousel-example-generic"}
+            %span.glyphicon.glyphicon-chevron-left
+          %a.right.carousel-control{"data-slide" => "next", :href => "#carousel-example-generic"}
+            %span.glyphicon.glyphicon-chevron-right
+      .slayd_bottom
+        #carousel-example-gen.carousel.slide{"data-ride" => "carousel", "data-interval" => "false"}
+          .carousel-inner
+            .item.active
+              = image_tag("user_b.png")
+              .info_users
+                .name_user Sean Tracey Geronimo
+                .n_job Senior Project Manager
+                %span.company Company:
+                .n_company BeanStock Media
+                .n_city San Francisco, CA
+              .butt_user
+                .btn-group.my-btn-grop
+                  %button.btn.btn-gray{:type => "button"} Connect
+                .btn-group
+                  %button.btn.btn-black{:type => "button"} Message
+            .item
+              = image_tag("user_g.png",:class => "img-my")
+              .info_users
+                .name_user Sean Tracey Geronimo
+                .n_job Senior Project Manager
+                %span.company Company:
+                .n_company BeanStock Media
+                .n_city San Francisco, CA
+              .butt_user
+                .btn-group.my-btn-grop
+                  %button.btn.btn-gray{:type => "button"} Connect
+                .btn-group
+                  %button.btn.btn-black{:type => "button"} Message
+            .item
+              = image_tag("user.png",:class => "img-my")
+              .info_users
+                .name_user Sean Tracey Geronimo
+                .n_job Senior Project Manager
+                %span.company Company:
+                .n_company BeanStock Media
+                .n_city San Francisco, CA
+              .butt_user
+                .btn-group.my-btn-grop
+                  %button.btn.btn-gray{:type => "button"} Connect
+                .btn-group
+                  %button.btn.btn-black{:type => "button"} Message
+            .item
+              = image_tag("user_c.png",:class => "img-my")
+              .info_users
+                .name_user Sean Tracey Geronimo
+                .n_job Senior Project Manager
+                %span.company Company:
+                .n_company BeanStock Media
+                .n_city San Francisco, CA
+              .butt_user
+                .btn-group.my-btn-grop
+                  %button.btn.btn-gray{:type => "button"} Connect
+                .btn-group
+                  %button.btn.btn-black{:type => "button"} Message
+          %a.left.carousel-control{"data-slide" => "prev", :href => "#carousel-example-gen"}
+            %span.glyphicon.glyphicon-chevron-left
+          %a.right.carousel-control{"data-slide" => "next", :href => "#carousel-example-gen"}
+            %span.glyphicon.glyphicon-chevron-right
     .my-market-place
       .hed-name
         .btn-group
           %button.btn.btn-default.dropdown-toggle.my-btn{"data-toggle" => "dropdown", :type => "button"}
-            %span.glyphicon.glyphicon-user
+            .groop
+              %span.glyphicon.mini.glyphicon-user
+              %span.glyphicon.mini.glyphicon-user
+              %span.glyphicon.center.glyphicon-user
             .nam My Marketplace
             %span.caret
           %ul.dropdown-menu{:role => "menu"}
