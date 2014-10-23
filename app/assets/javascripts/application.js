@@ -54,5 +54,3 @@ $(document).ready(function(){
      content: 'v razrabotke'
   });
 });
-
- $('body').scrollspy({ target: '.small' })
