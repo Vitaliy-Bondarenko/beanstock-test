@@ -10,8 +10,7 @@
       .div_center
         .div_1 Sing Up - it's free!
         .div_2
-          = link_to '#' do
-            .div_link Sing UP with a Linkedln accaunt
+          %input{:onclick => "location.href='#'", :type => "button", :value => "Sing UP with a Linkedln accaunt"}/
         .div_3
           Don't have a Linkedln Account? Sing UP
           = link_to 'here', 'https://www.linkedin.com'
@@ -19,8 +18,7 @@
       .div_center
         .div_1 Sing Up - it's free!
         .div_2
-          = link_to '#' do
-            .div_link Sing UP with a Facebook accaunt
+          %input{:onclick => "location.href='/auth/facebook/'", :type => "button", :value => "Sing UP with a Facebook accaunt"}/
         .div_3
           Don't have a Facebook Account? Sing UP
           = link_to 'here', 'https://www.facebook.com'
@@ -28,4 +26,4 @@
   .div_footer
     2014 Beanstock Media, Inc rights reserved
 
-  = link_to "Suggested Users", suggested_user_path
+  

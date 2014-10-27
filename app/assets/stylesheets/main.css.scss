@@ -18,7 +18,7 @@ body {
 
 .hed_m {
   height: 50px;
-  background-color: white;
+  background-color: #F1F1F1;
 }
 
 .hed {
@@ -27,7 +27,7 @@ body {
   margin: 0 auto;
 
   img {
-    margin: 10px 18px;
+    margin: 6px 6px;
     float: left;
   }
 
@@ -55,6 +55,11 @@ body {
 
 .hed_right {
   float: right;
+}
+ .nav_user {
+  float: right;
+  margin: 10px 25px;
+  a { color: #96949C; }
 }
 
 .menu {

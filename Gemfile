@@ -1,20 +1,22 @@
 source 'https://rubygems.org'
-
+ruby '2.1.2'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.4'
-group :development, :test do
-  gem 'sqlite3'
-end
+
 group :production do
-  gem 'pg'
-  gem 'rails_12factor'
+
+gem 'rails_12factor'
 end
+gem "omniauth"
+gem 'omniauth-facebook'
 gem 'bootstrap-sass'
 gem 'twitter-bootstrap-rails'
-
+gem 'pg'
+gem "koala", "~> 1.10.0rc"
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.3'
+gem 'node'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 # Use CoffeeScript for .js.coffee assets and views
