@@ -1,0 +1,96 @@
+// Place all the styles related to the session controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.header_div {
+  width: 1170px;
+  margin: 24px auto;
+}
+
+.privat {
+  width: 100%;
+  background-color: #DCDCDC;
+  min-height: 215px;
+  border-radius: 10px;
+  border: 1px solid #DCDCDC;
+  color: black;
+  padding: 57px 59px;
+}
+
+.privat_t {
+  font-size: 57px;
+  line-height: 1;
+}
+
+.privat_b {
+  font-size: 19px;
+
+}
+
+.bottom_div {
+  width: 100%;
+  padding-top: 34px;
+  display: table;
+  border-bottom: 1px solid gray;
+  padding-bottom: 35px;
+}
+
+.bottom_l {
+  width: 46.3%;
+  background-color: #F4F4F4;
+  min-height: 109px;
+  border-radius: 10px;
+  border: 1px solid #F4F4F4;
+  float: left;
+  font-size: 24px;
+  font-weight: bold;
+  padding: 18px 16px;
+  color: #737579;
+}
+
+.bottom_r {
+  width: 53.7%;
+  float: right;
+  display: table;
+}
+
+.div_center {
+  width: 50%;
+  margin: 0 auto;
+  float: left;
+  display: table;
+  padding-left: 30px;
+}
+
+.div_1 {
+  margin: 0 auto;
+  display: table;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.div_2 {
+  margin: 0 auto;
+  display: table;
+  padding-top: 5px;
+}
+
+.div_link {
+  padding: 6px 10px;
+  background-color: #A4A9BF;
+  color: white;
+  text-decoration: none;
+  font-size: 15px;
+  border-radius: 10px;
+}
+
+.div_footer { padding: 21px 0; }
+
+.div_3 {
+  margin: 0 auto;
+  display: table;
+  padding-top: 9px;
+  font-size: 13px;
+}
+
+body { background-color: white;}
