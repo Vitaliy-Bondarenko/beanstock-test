@@ -12,7 +12,9 @@ group :production do
 end
 gem 'bootstrap-sass'
 gem 'twitter-bootstrap-rails'
-gem 'omniauth-linkedin-oauth2'
+gem 'omniauth'
+gem 'omniauth-linkedin'
+gem 'linkedin'
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.3'

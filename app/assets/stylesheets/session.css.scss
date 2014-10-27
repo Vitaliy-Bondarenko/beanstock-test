@@ -7,6 +7,13 @@
   margin: 24px auto;
 }
 
+.nav_user {
+  float: right;
+  padding: 5px 89px 0 0;
+
+  a { color: #B3B3B3; }
+}
+
 .privat {
   width: 100%;
   background-color: #DCDCDC;
@@ -24,7 +31,6 @@
 
 .privat_b {
   font-size: 19px;
-
 }
 
 .bottom_div {

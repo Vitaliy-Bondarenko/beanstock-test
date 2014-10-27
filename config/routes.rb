@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
+  get 'auth/:provider/callback', to: 'session#create'
+  get 'auth/failure', to: redirect('/')
+  get 'signout', to: 'session#destroy', as: 'signout'
   get 'session/new'
-
   get 'suggested/user'
 
   # The priority is based upon order of creation: first created -> highest priority.

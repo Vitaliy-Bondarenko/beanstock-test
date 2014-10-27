@@ -1,3 +1,18 @@
+.hed_m
+  .hed
+    .hed_left
+      = image_tag("logo.png")
+    .nav_user
+      - if current_user
+        Signed in as
+        = succeed "!" do
+          %strong= current_user.name
+          = link_to "Sign out", signout_path, id: "sign_out"
+      - elsif
+        %div
+          = link_to "Log In (LinkedIn)", "/auth/linkedin", id: "sign_in_L"
+        %div
+          = link_to "Log In (Facebook)", "/auth/facebook", id: "sign_in_F"
 .header_div
   .privat
     .privat_t Your Private Collaborative Marketplace
@@ -10,7 +25,7 @@
       .div_center
         .div_1 Sing Up - it's free!
         .div_2
-          = link_to '/auth/linkedin' do
+          = link_to '/auth/linkedin', id: "sign_in_L" do
             .div_link Sing UP with a Linkedln accaunt
         .div_3
           Don't have a Linkedln Account? Sing UP
@@ -19,7 +34,7 @@
       .div_center
         .div_1 Sing Up - it's free!
         .div_2
-          = link_to '/auth/facebook' do
+          = link_to '/auth/facebook', id: "sign_in_F" do
             .div_link Sing UP with a Facebook accaunt
         .div_3
           Don't have a Facebook Account? Sing UP
@@ -27,5 +42,3 @@
           !
   .div_footer
     2014 Beanstock Media, Inc rights reserved
-
-  = link_to "Suggested Users", suggested_user_path
