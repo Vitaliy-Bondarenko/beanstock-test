@@ -1,7 +1,7 @@
 OmniAuth.config.logger = Rails.logger
 
-LINKEDIN_KEY    = "77d2whaoqxzts4"
-LINKEDIN_SECRET = "aun1hzkn4gGQQAh1"
+LINKEDIN_KEY    = "77vyha9uxg99kg"
+LINKEDIN_SECRET = "VxOBbzOVvoSv528u"
 
 
 Rails.application.config.middleware.use OmniAuth::Builder do
