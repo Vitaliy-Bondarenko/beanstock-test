@@ -33,20 +33,20 @@
             .com_link.blue
               3 Updates
       .btn-group.my_btn.hidden-md.hidden-xs
-        %button.btn.btn-default.my_height{:type => "button"} Tracey Geronimo
+        %button.btn.btn-default.my_height{:type => "button"}= current_user.name
         %button.btn.btn-default.dropdown-toggle.my_height{"data-toggle" => "dropdown", :type => "button"}
           %span.caret
           %span.sr-only Toggle Dropdown
         %ul.dropdown-menu{:role => "menu"}
           %li
-            %a{:href => "#"} Tracey Geronimo
+            %a{:href => "#"}= current_user.name
           %li
             %a{:href => "#"} Another action
           %li
             %a{:href => "#"} Something else here
           %li.divider
           %li
-            %a{:href => "#"} Separated link
+            = link_to "Sign out", signout_path, id: "sign_out"
     .navig-slim.visible-sm.visible-xs
       %button.nav-button Toggle Navigation
       %ul.primary-nav
@@ -82,13 +82,13 @@
             3 Updates
         %li.divid
         %li.parent
-          %a{:href => "#"} Tracey Geronimo
+          %a{:href => "#"}= current_user.name
           %ul
             %li
-              %a{:href => "#"} Tracey Geronimo
+              %a{:href => "#"}= current_user.name
             %li
               %a{:href => "#"} Another action
             %li
               %a{:href => "#"} Something else here
             %li
-              %a{:href => "#"} Separated link
+              %a{:href => signout_path } Sign out
